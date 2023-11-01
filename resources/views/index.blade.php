@@ -9,7 +9,7 @@
                         <h5 class="card-title">{{ $game["name"] }}</h5>
                         <p></p>
                         <p class="card-text">{{$game["prezzo"]}}</p>
-                        <a href="#" class="btn btn-primary">Scopri di piu'</a>
+                        <a href="{{route('game.detail',['name'=>$game['name']])}}" class="btn btn-primary">Scopri di piu'</a>
                     </div>
                 </div>
                 @endforeach
