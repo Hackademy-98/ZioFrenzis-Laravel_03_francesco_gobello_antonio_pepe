@@ -1,19 +1,14 @@
-<x-layout>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 ">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $games["name"] }}</h5>
-                        <p></p>
-                        <p class="card-text">{{ $games["prezzo"]}}</p>
-                        <a href="#" class="btn btn-primary">Scopri di piu'</a>
-                    </div>
-                </div>
-            </div>
+<x-layout title="{{$games['name']}}">
+    
+    <h1 class="text-center">{{$games["name"]}}</h1>
+    
+    <div class="card w-100" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{ $games["name"] }}</h5>
+            <p class="text-center">{{$games["description"]}}</p>
+            <p class="card-text text-center">{{ $games["prezzo"]}}</p>
+            
         </div>
     </div>
-
     
 </x-layout>
